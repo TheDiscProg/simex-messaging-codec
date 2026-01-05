@@ -1,0 +1,27 @@
+name: Run tests on Simex Messsaging Codecs
+on:
+  push:
+    branches:
+      - '*'
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            java: 21
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+          cache: sbt
+      - uses: sbt/setup-sbt@v1.1.14
+      - name: Build and test
+        shell: bash
+        run: sbt +test
