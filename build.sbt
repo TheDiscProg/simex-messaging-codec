@@ -17,18 +17,12 @@ lazy val root = (project in file("."))
   )
   .settings(
     commonSettings,
-    name := "simex-messaging",
+    name := "simex-messaging-codec",
     scalacOptions ++= Scalac.options,
-    scalacOptions ++= {
-      CrossVersion.partialVersion(scalaVersion.value) match {
-        case Some((2,13)) => Seq("-Ytasty-reader")
-        case _ => Seq("-Yretain-trees")
-      }
-    },
     crossScalaVersions := supportedScalaVersions
   )
 
-ThisBuild / version := "0.9.6"
+ThisBuild / version := "0.0.1"
 ThisBuild / organization := "io.github.thediscprog"
 ThisBuild / organizationName := "thediscprog"
 ThisBuild / organizationHomepage := Some(url("https://github.com/TheDiscProg"))
