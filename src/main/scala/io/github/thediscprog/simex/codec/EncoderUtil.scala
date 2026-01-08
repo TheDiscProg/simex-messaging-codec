@@ -1,10 +1,10 @@
-package io.github.thediscprog.simex.codec.encoder
+package io.github.thediscprog.simex.codec
 
 import scala.annotation.nowarn
 import scala.deriving.Mirror
 import scala.quoted.*
 
-object CodecMacros {
+object EncoderUtil {
 
   inline def isEnum[T](using m: Mirror.SumOf[T]): Boolean =
     ${ isEnumImpl[T]('m) }

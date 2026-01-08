@@ -1,14 +1,14 @@
-package io.github.thediscprog.simex.codec.encoder
+package io.github.thediscprog.simex.codec
 
-import io.github.thediscprog.slogic.Xor
-import io.github.thediscprog.simexmessaging.messaging.Datum
-import scala.deriving.*
-import scala.compiletime.*
-import scala.annotation.nowarn
-import io.github.thediscprog.simex.codec.helpers.TupleClassTags
-import scala.reflect.ClassTag
+import io.github.thediscprog.simex.codec.EncoderUtil.*
 import io.github.thediscprog.simex.codec.helpers.*
-import CodecMacros.*
+import io.github.thediscprog.simexmessaging.messaging.Datum
+import io.github.thediscprog.slogic.Xor
+
+import scala.annotation.nowarn
+import scala.compiletime.*
+import scala.deriving.*
+import scala.reflect.ClassTag
 
 trait SimexEncoder[T] {
   def encode(check: Option[String], t: T): Vector[Datum]
@@ -112,9 +112,8 @@ object SimexEncoder {
         encodedToDatum.toVector
       }
 
-      private def isEnum(a: Any): Boolean = {
+      private def isEnum(a: Any): Boolean =
         a.getClass().isEnum()
-      }
 
       private def isScalaEnumCase(cls: Class[?]): Boolean = {
         val enclosingType: Array[Boolean] = cls.getClasses().map(_.isEnum())

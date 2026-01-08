@@ -22,7 +22,7 @@ lazy val root = (project in file("."))
     crossScalaVersions := supportedScalaVersions
   )
 
-ThisBuild / version := "0.0.1"
+ThisBuild / version := "0.1.0"
 ThisBuild / organization := "io.github.thediscprog"
 ThisBuild / organizationName := "thediscprog"
 ThisBuild / organizationHomepage := Some(url("https://github.com/TheDiscProg"))
@@ -34,7 +34,7 @@ ThisBuild / publishMavenStyle := true
 ThisBuild / sonatypeCredentialHost := sonatypeCentralHost
 ThisBuild / publishTo := sonatypePublishToBundle.value
 ThisBuild / sonatypeProfileName := "io.github.thediscprog"
-ThisBuild / licenses := List("GNU-3.0" -> url("https://www.gnu.org/licenses/gpl-3.0.en.html"))
+ThisBuild / licenses := List("Apache-2.0" -> url("https://www.apache.org/licenses/LICENSE-2.0"))
 ThisBuild / homepage := Some(url("https://github.com/TheDiscProg/simex-messaging-codec"))
 ThisBuild / sonatypeProjectHosting := Some(GitHubHosting("TheDiscProg", "simex-messaging-codec", "TheDiscProg@gmail.com"))
 ThisBuild / scmInfo := Some(
