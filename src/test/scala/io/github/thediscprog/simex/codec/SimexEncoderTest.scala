@@ -37,7 +37,6 @@ class SimexEncoderTest extends AnyFlatSpec with Matchers {
     val encoder = summon[SimexEncoder[EnumClass]]
 
     val result = encoder.encode(None, test)
-    println(result)
 
     result.map(_.field) should contain allElementsOf List("id", "shape", "description")
   }
