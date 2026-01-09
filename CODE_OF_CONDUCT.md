@@ -1,7 +1,7 @@
-# Code of Conduct for Anvil
+# Code of Conduct
 
 ## Purpose
-The purpose of this Code of Conduct is to ensure that Anvil remains a welcoming, respectful, and 
+The purpose of this Code of Conduct is to ensure that this project remains a welcoming, respectful, and 
 collaborative environment for all contributors and users. We value diversity and inclusion and expect 
 all participants to behave professionally and courteously.
 

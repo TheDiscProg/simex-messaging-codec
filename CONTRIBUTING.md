@@ -1,5 +1,5 @@
-# Contributing to Anvil
-Thank you for your interest in contributing to Anvil!
+# Contributing to this project
+Thank you for your interest in contributing to this project!
 Please follow these steps to help keep the project organized and maintain high quality.
 
 1. Fork and clone the repository.
@@ -13,7 +13,7 @@ Please follow these steps to help keep the project organized and maintain high q
 
 ## Choosing an issue to work on
 - Read the Wiki to learn more about the project.
-- Check the [issues](https://github.com/TheDiscProg/Anvil/issues) to see if there is an issue that you would like to work on.
+- Check the issues in the repo to see if there is an issue that you would like to work on.
 - If you would like to suggest a new feature, please open an issue first to discuss it with the maintainers.
 
 ## What to include in your pull request
