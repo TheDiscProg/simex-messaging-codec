@@ -1,4 +1,5 @@
 # Simex Messsaging Codecs
+##Please note that this is no longer developed as simex-messaging version 1 onwards uses paramaterized types
 
 Please see the [Simex Wiki](https://github.com/TheDiscProg/simex-messaging/wiki/Wiki-Home-Page) for more information about simex messaging. This library provides CODECS for Simex message's `data` field.
 
